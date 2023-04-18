@@ -1,0 +1,47 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="footer-area">
+    @Html.AntiForgeryToken()
+    <div class="footer-top section-space-y-axis-100 text-black" data-bg-color="##FFF8DC">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">Thông tin liên hệ</h3>
+                        @await Component.InvokeAsync("Footer")
+
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">Information</h3>
+                        <ul class="widget-list-item">
+                            <li>
+                                <a href="/page/Chinh-sach-bao-mat">Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                                <a href="/page/Chinh-sach-doi-tra">Chính sách đổi trả</a>
+                            </li>
+                            <li>
+                                <a href="/page/Huong-dan-mua-hang">Hướng dẫn mua hàng</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-6 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">FanPage</h3>
+                        <ul class="widget-list-item">
+                            <a href="https://www.facebook.com/groups/853112728638325/" target="_self">
+                                <i class="fa-brands fa-github-square" style="font-size:50px"></i>
+                                <i class="fa-brands fa-facebook" style="font-size:50px"></i>
+                                <i class="fa-brands fa-instagram" style="font-size:50px"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
